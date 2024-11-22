@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Pribadi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Tugas Pribadi</h1>
+        <p><strong>Nama:</strong> Muhammad Wahyu Afriza Putra</p>
+        <p><strong>Kelas:</strong> Teknik Informatika D 23</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Form untuk unggah tugas -->
+        <section id="upload-section">
+            <h2>Unggah Tugas</h2>
+            <input type="file" id="upload-input" accept="image/*" required>
+            <button class="btn-upload" id="upload-btn">Unggah Foto</button>
+        </section>
+
+        <!-- Mading Tugas -->
+        <section id="mading-section">
+            <h2>Galeri Tugas</h2>
+            <div id="mading-container"></div>
+        </section>
+    </main>
+
+    <!-- Modal untuk melihat tugas secara detail -->
+    <div id="modal" class="modal">
+        <span id="close-modal" class="close-btn">X</span>
+        <img id="modal-img" alt="Tugas Detail">
+        <div id="modal-actions">
+            <button id="save-task" class="btn-modal">Simpan</button>
+            <button id="delete-task" class="btn-modal">Hapus</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Muhammad Wahyu Afriza Putra</p>
+    </footer>
+</body>
+</html>
